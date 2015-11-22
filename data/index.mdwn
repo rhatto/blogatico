@@ -9,3 +9,10 @@ Implementação
 O blogático é um script escrito em bash que utiliza o [Pandoc](http://pandoc.org)
 para compilar um website completo a partir de arquivos de texto usando a formatação
 Markdown.
+
+Desenvolvimento
+---------------
+
+O blogático já vem com um ambiente de desenvolvimento. Para usá-lo, instale o Vagrant e digite:
+
+    vagrant up

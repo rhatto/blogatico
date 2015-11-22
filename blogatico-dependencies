@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#
+# Blogático: gerador de conteúdo estático!
+#
+# Copyright (C) 2015 Silvio Rhatto - rhatto at riseup.net
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published
+# by the Free Software Foundation, either version 3 of the License,
+# or any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+echo "Atualizando o sistema..."
+apt-get update
+apt-get upgrade -y
+
+echo "Instalando dependências..."
+apt-get install -y bash perl coreutils findutils pandoc rsync
+
+echo "Instalando servidor web..."
+apt-get install -y apache2
+
+echo "Configura servidor web..."
+rm -rf /var/www/html/
+ln -s /vagrant/output/ /var/www/html
