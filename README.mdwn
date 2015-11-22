@@ -1,0 +1,30 @@
+Blogático: compilador de sítio estático
+=======================================
+
+Blogático é um gerador de websites estáticos com as seguintes características:
+
+* Simplicidade e facilidade de uso.
+* Baseado em arquivos de texto com formatação básica.
+* Pouca dependência em aplicações e bibliotecas externas.
+* Fácil de hospedar em qualquer local.
+* O conteúdo pode ser convertido noutros formatos.
+
+Criando um site
+---------------
+
+Vamos ilustrar com simples comandos:
+
+    # Crie a pasta do seu site já com a pasta de dados
+    mkdir -p ~/projetos/blog/data
+
+    # Entre na pasta
+    cd ~/projetos/blog
+
+    # Crie uma página inicial
+    echo "Oi mundo!" > data/index.mdwn
+
+    # Compile!
+    blogatico
+
+O sítio compilado será criado na pasta `output`, pronta para ser
+copiada para um ambiente web.
