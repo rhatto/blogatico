@@ -12,14 +12,8 @@ Blogático é um gerador de websites estáticos com as seguintes característica
 Dependências
 ------------
 
-O blogático depende dos seguintes pacotes instalados no seu sistema:
-
-* bash
-* perl
-* coreutils
-* findutils
-* pandoc
-* rsync
+Utilize o script `blogatico-dependencies` para fazer a instalação das dependências num
+ambiente de hospedagem compatível com o Debian GNU/Linux.
 
 Criando um site
 ---------------
@@ -40,3 +34,24 @@ Vamos ilustrar com simples comandos:
 
 O sítio compilado será criado na pasta `output`, pronta para ser
 copiada para um ambiente web.
+
+Mantendo o blog pelo git
+------------------------
+
+    # Inicialize
+    git init
+
+    # Ignore o site compilado do versionamento
+    git ignore output
+
+    # Adicione o resto
+    git add .
+
+    # Cometa as mudanças iniciais
+    git commit -m "Versão inicial"
+
+Documentação adicional e exemplo
+--------------------------------
+
+Um sítio de exemplo contendo a documentação básica do blogático se encontra
+na pasta `data` e pode ser gerada pelo próprio blogático!
