@@ -16,3 +16,25 @@ Desenvolvimento
 O blogático já vem com um ambiente de desenvolvimento. Para usá-lo, instale o Vagrant e digite:
 
     vagrant up
+
+Instalando as dependências
+--------------------------
+
+Utilize o script `blogatico-dependencies` para fazer a instalação das dependências num
+ambiente de hospedagem compatível com o Debian GNU/Linux.
+
+Fazendo o deploy
+----------------
+
+Utilize o seguinte `post-update` hook para gerar o sítio estático no ambiente de hospedagem:
+
+    #!/bin/sh
+
+    unset GIT_DIR
+    cd ..
+    git reset HEAD --hard
+    git checkout -f
+    ./blogatico
+
+    cd -
+    exec git update-server-info
