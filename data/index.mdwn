@@ -17,6 +17,20 @@ O blogático já vem com um ambiente de desenvolvimento. Para usá-lo, instale o
 
     vagrant up
 
+Fazendo um release
+------------------
+
+    # Comece o desenvolvimento configurando o git-flow
+    git flow init
+
+    # Sempre desenvolva a partir do branch develop
+    git checkout develop
+
+    # Faça um release conforme o necessário
+    git flow release init VERSAO
+
+    # etc!
+
 Fazendo o deploy
 ----------------
 

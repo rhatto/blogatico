@@ -1,8 +1,8 @@
 TODO
 ====
 
-* Script básico para a geração do site.
-* Conteúdo inicial para testes.
-* Criar o repositório git para o projeto.
-* Documentação.
-* Lançamento!
+* Trivial: rotina de testes do blogatico, com dados sample e um `pre-commit` hook.
+* Essencial: vagrant file e provisionador shell.
+* Básico: geração de saídas noutros formatos.
+* Intermediário: template usando o [Skeleton](http://getskeleton.com) ou similar.
+* Avançado: link para o arquivo fonte nas páginas HTML.
