@@ -15,6 +15,15 @@ Dependências
 Utilize o script `blogatico-dependencies` para fazer a instalação das dependências num
 ambiente de hospedagem compatível com o Debian GNU/Linux.
 
+Instalação
+----------
+
+Copie o blogático para sua pasta de aplicações ou crie um atalho para ele.
+Isso pode ser feito de várias maneiras, por exemplo:
+
+* Configure a variável de ambiente `$PATH` do seu shell para incluir a pasta do repositório do blogático.
+* Coloque o script `blogatico` na sua pasta `~/bin` ou em `/usr/local/bin`.
+
 Criando um site
 ---------------
 
