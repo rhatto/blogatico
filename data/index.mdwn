@@ -1,7 +1,7 @@
 Blogático: gerador de websites estáticos
 ========================================
 
-Oi mundo! Este é um site de xemplo e documentação do blogático.
+Oi mundo! Este é um site de exemplo e documentação do blogático.
 
 Implementação
 -------------
@@ -38,3 +38,8 @@ Utilize o seguinte `post-update` hook para gerar o sítio estático no ambiente 
 
     cd -
     exec git update-server-info
+
+Para que isso funcione, você também terá de configurar o repositório do seu sítio estático
+para que aceite receber as mudanças via `git push`:
+
+    git config receive.denyCurrentBranch ignore
